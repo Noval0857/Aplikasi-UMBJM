@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <item
+        android:id="@+id/beranda"
+        android:title="BERANDA"
+        android:icon="@drawable/ic_home"
+        />
+
+    <item
+        android:id="@+id/profil"
+        android:title="PROFIL"
+        android:icon="@drawable/ic_person">
+        <menu>
+            <item
+                android:id="@+id/vdm"
+                android:title="Visi &amp; Misi"/>
+            <item
+                android:id="@+id/Identitas"
+                android:title="Identitas"/>
+            <item
+                android:id="@+id/pimpinan"
+                android:title="Pimpinan"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/fakultas"
+        android:title="FAKULTAS"
+        android:icon="@drawable/ic_fakultas"/>
+
+    <item
+        android:id="@+id/akreditasi"
+        android:title="AKREDITASI"
+        android:icon="@drawable/ic_akreditasi"/>
+
+</menu>

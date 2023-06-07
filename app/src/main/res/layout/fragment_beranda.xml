@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BerandaFragment"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/h"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logoheader"
+                    android:background="@color/white"
+                    android:elevation="10dp"
+                    />
+                <FrameLayout
+                    android:id="@+id/f1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="475dp"
+                    android:layout_below="@+id/header"
+                    android:background="#14597a">
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selamat Datang Di UM Banjarmasin"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:justificationMode="inter_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:text="Universitas Muhammadiyah Banjarmasin memiliki misi untuk menghasilkan lulusan profesional, unggul dan islami yang memiliki integritas kepribadian dan moralitas yang islami dalam konteks kehidupan individual maupun sosial."
+                        android:id="@+id/txt2"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/txt1"/>
+                    <FrameLayout
+                        android:id="@+id/f2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@color/black"
+                        android:alpha="0.7"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="120sp"
+                        android:layout_marginRight="10sp"
+                        >
+                        <TextView
+                            android:id="@+id/pstudi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Program Studi"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15sp"/>
+                        <TextView
+                            android:id="@+id/pstudi2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="30sp"
+                            android:textSize="10sp"
+                            android:layout_marginRight="5sp"
+                            android:text="Lihat semua program studi"
+                            android:textColor="#14597a"
+                            android:gravity="center"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/f3"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@color/black"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginTop="240sp"
+                        android:alpha="0.7">
+                        <TextView
+                            android:id="@+id/daftar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pendaftaran"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="15sp"/>
+
+                        <TextView
+                            android:id="@+id/daftar2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="30sp"
+                            android:textSize="10sp"
+                            android:layout_marginRight="5sp"
+                            android:text="Info penerimaan mhs baru"
+                            android:textColor="#14597a"
+                            android:gravity="center"/>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/f4"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@color/black"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="360sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10sp"
+                        android:alpha="0.7">
+                        <TextView
+                            android:id="@+id/peta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Peta Kampus"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15sp"/>
+
+                        <TextView
+                            android:id="@+id/peta2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="30sp"
+                            android:textSize="10sp"
+                            android:layout_marginRight="5sp"
+                            android:text="Lihat peta kampus"
+                            android:textColor="#14597a"
+                            android:gravity="center"/>
+
+                    </FrameLayout>
+                </FrameLayout>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/berita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BERITA"
+                android:textColor="@color/black"
+                android:layout_below="@id/h"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="15sp"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/jberita1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/berita"
+                android:text="Pelatihan Preceptor Mentor Prodi Profesi Bidan"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:textSize="15sp"
+                android:textColor="#14597a"/>
+            <TextView
+                android:id="@+id/isiberita1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jberita1"
+                android:text="Program Studi Pendidikan Profesi Bidan Fakultas Keperawatan dan Ilmu Kesehatan (FKIK) Universitas Muhammadiyah Banjarmasin (UM Banjarmasin) menggelar kegiatan Pelatihan Preceptor Mentor bagi calon preceptor akademik dan preceptor klinik yang akan…"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/jberita2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isiberita1"
+                android:text="Silaturahmi Dan Tausiah Kebangsaan Bersama Prof. Dr. H. M. Amien Rais, MA"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:textSize="15sp"
+                android:textColor="#14597a"/>
+            <TextView
+                android:id="@+id/isiberita2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jberita2"
+                android:text="Mantan Ketua MPR RI yang sekarang menjabat Ketua Majelis Syuro Partai Ummat, Amien Rais, melakukan kunjungan safari dakwah ke Kalimantan Selatan pada Ahad-Selasa, 19-21 Februari 2023. Tempat pelaksanaan safari dakwah…"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/jberita3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isiberita2"
+                android:text="Kerja Sama Dan Kuliah Umum Bersama BNN Provinsi Kalimantan Selatan"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:textSize="15sp"
+                android:textColor="#14597a"/>
+            <TextView
+                android:id="@+id/isiberita3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jberita3"
+                android:text="Rektor Universitas Muhammadiyah Banjarmasin menandatangani MoU dengan Badan Narkotika Nasional Provinsi Kalimantan Selatan pada hari Kamis, 16 Februari 2023. Acara penandatanganan MoU digelar di Studio Adijani Al-Alabij, Gedung Ahmad Azhar…"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/jberita4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isiberita3"
+                android:text="Kuliah Umum KKN Tematik Bangga Kencana Dan Mahasiswa Peduli Stunting Oleh Deputi Bidang Pengendalian Penduduk BKKBN"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:textSize="15sp"
+                android:textColor="#14597a"/>
+            <TextView
+                android:id="@+id/isiberita4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jberita4"
+                android:text="Universitas Muhammadiyah Banjarmasin menerima kunjungan dari Deputi Bidang Pengendalian Penduduk Badan Kependudukan dan Keluarga Berencana Nasional (BKKBN), Dr. Bonivasius Prasetya Ichtiarto, S.Si., M.Eng pada hari Rabu, 15 Februari 2023, bertempat…"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/jberita5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isiberita4"
+                android:text="Monitoring Dan Evaluasi Mahasiswa Penerima KIP Kuliah Merdeka, Semester Ganjil Tahun Akademik 2022/2023"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:textSize="15sp"
+                android:textColor="#14597a"/>
+            <TextView
+                android:id="@+id/isiberita5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jberita5"
+                android:text="Universitas Muhammdiyah Banjarmasin melalui Bagian Kemahasiswaan menyelenggarakan kegiatan Monitoring dan Evaluasi (Monev) Mahasiawa Penerima KIP Kuliah Merdeka Tahun 2020, 2021 dan 2022 Semester Ganjil Tahun Akademik 2022/2023. Kegiatan dilaksanakan selama…"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/lihatberita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isiberita5"
+                android:text="Lihat semua berita >>"
+                android:textColor="#14597a"
+                android:textSize="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="10sp"/>
+            <TextView
+                android:id="@+id/agenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AGENDA"
+                android:textColor="@color/black"
+                android:layout_below="@id/lihatberita"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="15sp"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/jagenda1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/agenda"
+                android:text="Festival Al-Qur’an UM Banjarmasin Tahun 2022"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:textSize="15sp"
+                android:textColor="#14597a"/>
+            <TextView
+                android:id="@+id/isiagenda1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jagenda1"
+                android:text="15-17 November 2022, Kampus Utama Universitas Muhammadiyah Banjarmasin (Jl. Gubernur Syarkawi (Lingkar Utara), Semangat Karya, Alalak, Barito Kuala)"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/jagenda2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isiagenda1"
+                android:text="Pengenalan Kehidupan Kampus Mahasiswa Baru (PKKMB)"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:textSize="15sp"
+                android:textColor="#14597a"/>
+            <TextView
+                android:id="@+id/isiagenda2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jagenda2"
+                android:text="5 - 10 September 2022 — 06.00 - selesai, Universitas Muhammadiyah Banjarmasin"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/jagenda3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isiagenda2"
+                android:text="Wisuda &amp; Angkat Sumpah Program Profesi Ners FKIK UM Banjarmasin"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:textSize="15sp"
+                android:textColor="#14597a"/>
+            <TextView
+                android:id="@+id/isiagenda3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jagenda3"
+                android:text="19 Mei 2022 — 09.00 WITA - Selesai, Studio Adijani Al alabij Lantai 5 Kampus Utama"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/jagenda4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isiagenda3"
+                android:text="Yudisium Program Profesi Ners FKIK UM Banjarmasin"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:textSize="15sp"
+                android:textColor="#14597a"/>
+            <TextView
+                android:id="@+id/isiagenda4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jagenda4"
+                android:text="18 Mei 2022 — 09.30 WITA - selesai, Aula Chalik Dahlan Kampus 1 UM Banjarmasin"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/jagenda5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isiagenda4"
+                android:text="Kuliah Umum Semester Genap TA 2021-2022"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:textSize="15sp"
+                android:textColor="#14597a"/>
+            <TextView
+                android:id="@+id/isiagenda5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jagenda5"
+                android:text="28 Maret 2022 — 09.00, Studio Adijani Al alabij Lantai 5 Kampus Utama"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/lihatagenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isiagenda5"
+                android:text="Lihat semua agenda >>"
+                android:textColor="#14597a"
+                android:textSize="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="10sp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#333"
+                android:layout_below="@+id/lihatagenda">
+                <ImageView
+                    android:id="@+id/logowhite"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/white"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Universitas Muhammadiyah Banjarmasin"
+                    android:id="@+id/txtfooter1"
+                    android:layout_toRightOf="@+id/logowhite"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jalan S. Parman Komplek Rumah Sakit Islam Banjarmasin"
+                    android:id="@+id/txtfooter2"
+                    android:layout_toRightOf="@+id/logowhite"
+                    android:layout_below="@+id/txtfooter1"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:textColor="@color/white"
+                    android:textSize="8sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telp/Fax. (0511) 3363002"
+                    android:id="@+id/txtfooter3"
+                    android:layout_toRightOf="@+id/logowhite"
+                    android:layout_below="@id/txtfooter2"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:textColor="@color/white"
+                    android:textSize="8sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mail. info@umbjm.ac.id"
+                    android:id="@+id/txtfooter4"
+                    android:layout_toRightOf="@+id/logowhite"
+                    android:layout_below="@id/txtfooter3"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:textColor="@color/white"
+                    android:textSize="8sp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
